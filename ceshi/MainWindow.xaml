@@ -1,0 +1,33 @@
+﻿<Window x:Class="ceshi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ceshi"
+        mc:Ignorable="d"
+        Title="HELLO" Height="630" Width="990" MinHeight="630" MinWidth="990">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2"/>
+            <RowDefinition Height="590*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="202"/>
+            <ColumnDefinition Width="2"/>
+            <ColumnDefinition Width="518*"/>
+            <ColumnDefinition Width="2"/>
+            <ColumnDefinition Width="241"/>
+        </Grid.ColumnDefinitions>
+        <GridSplitter x:Name="gridSplitter1" HorizontalAlignment="Stretch" Grid.Column="1" Margin="0,0,0,0" Grid.RowSpan="3" Background="#FFC72929"/>
+        <GridSplitter x:Name="gridSplitter2" HorizontalAlignment="Stretch" Grid.Column="3" Margin="0,0,0,0" Grid.RowSpan="3" Background="#FFC72929"/>
+        <GridSplitter x:Name="gridSplitter3" HorizontalAlignment="Stretch" Grid.Row="0" Margin="0,0,0,0" Grid.ColumnSpan="6" Background="#FFC72929"/>
+        <DockPanel VerticalAlignment="Top" Background="#FF1888E6"  Grid.Row="1" Height="125" />
+        <DockPanel Background="#FF91ABC1" Margin="0,125,0,43" Grid.Row="1"  Grid.Column="0" />
+        <DockPanel VerticalAlignment="Bottom" Background="#FFD6DEE4" Grid.Row="1" Height="43" />
+        <DockPanel Height="40"  VerticalAlignment="Top"  Grid.Column="2" Grid.Row="1" Background="#FFBF5858"/>
+        <DockPanel Height="142" VerticalAlignment="Bottom" Grid.Column="2"  Grid.Row="1" Background="#FFC78888"/>
+        <DockPanel Grid.Column="4" Background="#FFB43535"  Grid.Row="1"/>
+        <DockPanel Grid.Column="2" Margin="0,38,0,141" Grid.Row="1" Background="#FFA9B8AB"/>
+
+    </Grid>
+</Window>
